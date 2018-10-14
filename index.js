@@ -17,3 +17,15 @@ const increaseRankBy = function(n) {
     }
   }
 }
+
+const deepestChild = function() {
+  let node = document.getElementsById('grand-node')
+  let nextNode = node.children[0]
+
+  while (nextNode) {
+    node = nextNode
+    nextNode = node.children[0]
+  }
+
+  return node
+}
